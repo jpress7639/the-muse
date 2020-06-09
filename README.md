@@ -45,10 +45,11 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |  Day | Deliverable | Status
 |---|---| ---|
 |June 8| Project Prompt | Incomplete
-|June 9| Finishing Layout Structure, Wireframe, and Beginning HTML/CSS/JS | Incomplete
-|June 10| Continuing Core Application Structure (HTML, CSS, etc.) and starting to implement API | Incomplete
-|June 11| Initial Clickable Model  | Incomplete
-|June 12| MVP should be complete maybe start with the second API | Incomplete
+|June 9| Finishing Layout Structure, Wireframe, and Beginning HTML/CSS| Incomplete
+|June 10| Continuing Core Application Structure (HTML, CSS, etc.) and start beginning JS | Incomplete
+|June 11| Continue JS Work / Be Able to Render Data from API | Incomplete
+|June 12| MVP should be complete | Incomplete
+|June 13-14 | Polish App and implement Post-MVP if time allows | Incomplete
 |June 15| Present the Project | Incomplete
 
 ## Priority Matrix
@@ -61,16 +62,16 @@ This will track my estimation on how much time I will be spending on. I think th
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Working with API / Rendering Data | H | 6 hrs |  |  |
-| Other JS Work (Click Functions, Words List, and Ending Prose) | H | 5 hrs | | |
-| CSS Design and Animation | M | 5 hrs | | |
+| Working with API / Rendering Data | H | 7 hrs |  |  |
+| Other JS Work (Click Functions, Words List, and Ending Prose) | H | 7 hrs | | |
+| CSS Design and Animation | M | 6.5 hrs | | |
 | HTML Structure | L | 2 hrs | | |
-| Phone Media Query | L | 2 hrs | | |
+| Phone Media Query | M | 2.5 hrs | | |
 | Post-MVP Work | L | 5 hrs | | |
-| Total | H | 25 hrs |  |  |
+| Total | H | 30 hrs |  |  |
 
 ## Code Snippet
 
 ## Change Log
   
-- Constructed first readMe for the Project Proposal
+- (6/8) Constructed first readMe for the Project Proposal
