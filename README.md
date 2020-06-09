@@ -64,7 +64,7 @@ For the purposes of this project
 
 
 - Add second API (quotes or prompt) to offer differentiation in the prompts
-- I do want to make a star design in the background to make them shoot as the user progress 
+- I do want to make a star design in the background to make them shoot as the user progresses through the exercise
 - To be able to save whatever the final result is from this type of writing sequence.
 
 ## Project Schedule
@@ -93,13 +93,13 @@ This will track my estimation on how much time I will be spending on. I think th
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Working with API / Rendering Data | H | 7 hrs |  |  |
+| Working with API / Rendering Data | H | 6 hrs |  |  |
 | Other JS Work (Click Functions, Words List, and Ending Prose) | H | 7 hrs | | |
-| CSS Design and Animation | M | 7.5 hrs | | |
+| CSS Design and Animation | M | 8 hrs | | |
 | HTML Structure | L | 2 hrs | | |
-| Phone Media Query | M | 2.5 hrs | | |
+| Phone Media Query | M | 2 hrs | | |
 | Post-MVP Work | L | 6 hrs | | |
-| Total | H | 32 hrs |  |  |
+| Total | H | 31 hrs |  |  |
 
 ## Code Snippet
 
