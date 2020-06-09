@@ -12,7 +12,7 @@ Broken Stars is a brainstorming app for all artists to find more inspiration to 
 
 For the purposes of this project
 
-([https://pixabay.com/api/?key=16950900-4b8a7189e0448d4be8704e6ae])
+https://pixabay.com/api/?key=16950900-4b8a7189e0448d4be8704e6ae
 
 ```JSON 
 {
@@ -47,7 +47,7 @@ For the purposes of this project
 
 ## Wireframes
 
-([https://wireframe.cc/pDz2Pf])
+https://wireframe.cc/pDz2Pf
 
 ### MVP/PostMVP
 
@@ -85,7 +85,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Priority Matrix
 
-([https://res.cloudinary.com/dkhiieq9p/image/upload/v1591665722/Screen_Shot_2020-06-08_at_9.20.35_PM_uwh8y5.png])
+https://res.cloudinary.com/dkhiieq9p/image/upload/v1591712396/Screen_Shot_2020-06-09_at_10.19.19_AM_qgjpzt.png
 
 ## Timeframes
 
