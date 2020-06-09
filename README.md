@@ -12,8 +12,6 @@ The Muse is a brainstorming app for all artists to find more inspiration to cont
 
 For the purposes of this project
 
-https://pixabay.com/api/?key=16950900-4b8a7189e0448d4be8704e6ae
-
 ```JSON 
 {
     "total": 1259631,
@@ -75,8 +73,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|June 8| Project Prompt | Incomplete
-|June 9| Finishing Layout Structure, Wireframe, and Beginning HTML/CSS| Incomplete
+|June 8| Project Prompt | Complete
+|June 9| Finishing Layout Structure, Wireframe, and Beginning HTML/CSS| Complete
 |June 10| Continuing Core Application Structure (HTML, CSS, etc.) and start beginning JS | Incomplete
 |June 11| Continue JS Work / Be Able to Render Data from API | Incomplete
 |June 12| MVP should be complete | Incomplete
@@ -106,3 +104,4 @@ This will track my estimation on how much time I will be spending on. I think th
 ## Change Log
   
 - (6/8) Constructed first readMe for the Project Proposal
+- (6/9) Project Approved and Began Basic HTML and CSS Structuring 
