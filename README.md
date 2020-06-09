@@ -14,6 +14,36 @@ For the purposes of this project
 
 ([https://pixabay.com/api/?key=16950900-4b8a7189e0448d4be8704e6ae])
 
+```JSON 
+{
+    "total": 1259631,
+    "totalHits": 500,
+    "hits": [
+        {
+            "id": 5255326,
+            "pageURL": "https://pixabay.com/photos/landscape-fantasy-sky-clouds-5255326/",
+            "type": "photo",
+            "tags": "landscape, fantasy, sky",
+            "previewURL": "https://cdn.pixabay.com/photo/2020/06/03/15/20/landscape-5255326_150.jpg",
+            "previewWidth": 150,
+            "previewHeight": 100,
+            "webformatURL": "https://pixabay.com/get/53e2d0464950aa14f1dc846096293177103fd7e5534c704c7c2e7dd09f4fc458_640.jpg",
+            "webformatWidth": 640,
+            "webformatHeight": 427,
+            "largeImageURL": "https://pixabay.com/get/53e2d0464950aa14f6da8c7dda7936781c3adeec53516c4870267ad29345c759b8_1280.jpg",
+            "imageWidth": 7087,
+            "imageHeight": 4724,
+            "imageSize": 3912235,
+            "views": 20169,
+            "downloads": 16766,
+            "favorites": 61,
+            "likes": 130,
+            "comments": 83,
+            "user_id": 3764790,
+            "user": "enriquelopezgarre",
+            "userImageURL": "https://cdn.pixabay.com/user/2020/06/03/11-05-03-625_250x250.jpg"
+        } ```
+
 ## Wireframes
 
 ([https://wireframe.cc/pDz2Pf])
