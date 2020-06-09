@@ -71,13 +71,6 @@ This will track my estimation on how much time I will be spending on. I think th
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
-
-```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
-```
-
 ## Change Log
   
+- Constructed first readMe for the Project Proposal
