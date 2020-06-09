@@ -2,7 +2,7 @@
 
 ## Project Name
 
-Broken Stars
+The Muse
 
 ## Project Description
 
