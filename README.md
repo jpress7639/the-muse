@@ -12,8 +12,6 @@ The Muse is a brainstorming app for all artists to find more inspiration to cont
 
 For the purposes of this project
 
-https://pixabay.com/api/?key=16950900-4b8a7189e0448d4be8704e6ae
-
 ```JSON 
 {
     "total": 1259631,
