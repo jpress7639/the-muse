@@ -73,8 +73,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|June 8| Project Prompt | Incomplete
-|June 9| Finishing Layout Structure, Wireframe, and Beginning HTML/CSS| Incomplete
+|June 8| Project Prompt | Complete
+|June 9| Finishing Layout Structure, Wireframe, and Beginning HTML/CSS| Complete
 |June 10| Continuing Core Application Structure (HTML, CSS, etc.) and start beginning JS | Incomplete
 |June 11| Continue JS Work / Be Able to Render Data from API | Incomplete
 |June 12| MVP should be complete | Incomplete
@@ -104,3 +104,4 @@ This will track my estimation on how much time I will be spending on. I think th
 ## Change Log
   
 - (6/8) Constructed first readMe for the Project Proposal
+- (6/9) Project Approved and Began Basic HTML and CSS Structuring 
