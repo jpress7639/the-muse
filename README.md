@@ -42,7 +42,8 @@ For the purposes of this project
             "user_id": 3764790,
             "user": "enriquelopezgarre",
             "userImageURL": "https://cdn.pixabay.com/user/2020/06/03/11-05-03-625_250x250.jpg"
-        } ```
+        }
+```
 
 ## Wireframes
 
