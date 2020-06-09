@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Lato:ital,wght@0,400;0,700;1,400&family=Shadows+Into+Light+Two&family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
+    <script defer src="./app.js"></script>
+    <title>The Muse</title>
+</head>
+<body>
+    <header class="welcome">
+        <h1>Welcome to The Muse</h1>
+        <h2>A Cure for Writer's Block</h2>
+    </header>
+    <section id="directions">
+        <p>Welcome to The Muse! Here you will be given a prompt or picture where you will have whatever amount of time you wish in order to write a stream of consciousness! Happy Writing!</p>
+    </section>
+    <main id="start">
+        <button id="start-button">Click Here To See Your New Prompt</button>
+        <div class="prompt"></div>
+       
+        <div class="countdown"></div>
+    </main>
+    <section id="writing">
+        <ul class="keywords"></ul>
+        <form class="keywords" action="add-keywords">
+        <input type="keywords">
+        <button class="add">Add Keywords</button>
+        </form>
+        <form class="prose" action="final">
+        <input type="prose">
+        <button id="submit">Save Your Prose!</button>
+        </form>
+    </section>
+</body>
+</html>

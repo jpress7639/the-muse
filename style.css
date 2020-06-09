@@ -1,0 +1,123 @@
+* {
+    border: solid 1px;
+}
+
+header.welcome {
+    background: rgba(253,255,255, 0.5);
+    text-align: center;
+    width: 100%;
+    height: 150px;
+    font-family: Lato, serif;
+    margin-bottom: 100px;
+}
+
+header.welcome h1 {
+    font-size: 40px;
+}
+
+header.welcome h2 {
+    font-size: 25px;
+}
+
+section#directions {
+    margin: 0 auto;
+    height: 200px;
+    width: 50%;
+}
+
+section#directions p{
+    font-size: 20px;
+    font-family: shadows into light two, sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+main#start {
+    margin-top: 100px;
+    width: 100%;
+    height: 700px;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    align-items: center;
+}
+
+main#start button#start-button{
+    height: 50px;
+    padding: 5px;
+}
+
+main#start div.prompt {
+    width: 50%;
+    height: 400px;
+}
+
+main#start div.countdown{
+    height: 50px;
+    width: 50%;
+}
+
+section#writing {
+    margin-top: 200px;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 550px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 450px 50px;
+    grid-gap: 10px;
+}
+
+section#writing ul.keywords {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+section#writing form.keywords{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 90%;
+    height: 50px;
+    margin-left: 20px;
+}
+
+section#writing form.keywords input{
+    width: 60%;
+    height: 50px;
+}
+
+section#writing form button.add{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 25%;
+    height: 50px;
+    margin-left: 10px;
+}
+
+section#writing form.prose {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    width: 100%;
+    height: 100%;
+}
+
+section#writing form.prose input{
+    height: 81%;
+    width: 95%;
+    margin-top: 15px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+section#writing form.prose button{
+    height: 50px;
+    width: 90%;
+    margin-top: 25px;
+    margin-left: 20px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
