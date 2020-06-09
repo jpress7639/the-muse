@@ -20,7 +20,7 @@ header.welcome h2 {
 }
 
 section#directions {
-    margin: 0 auto;
+    margin: 200px auto;
     height: 200px;
     width: 50%;
 }
@@ -29,7 +29,7 @@ section#directions p{
     font-size: 20px;
     font-family: shadows into light two, sans-serif;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
 }
 
 main#start {
@@ -45,6 +45,7 @@ main#start {
 main#start button#start-button{
     height: 50px;
     padding: 5px;
+    font-family: lato, sans-serif;
 }
 
 main#start div.prompt {
@@ -55,6 +56,23 @@ main#start div.prompt {
 main#start div.countdown{
     height: 50px;
     width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+main#start div.countdown p{
+    font-family: lato, serif;
+    font-size: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -25px;
+}
+
+section#next-steps{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
 }
 
 section#writing {
@@ -72,7 +90,7 @@ section#writing ul.keywords {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     list-style-type: none;
 }
@@ -88,11 +106,13 @@ section#writing form.keywords{
 section#writing form.keywords input{
     width: 60%;
     height: 50px;
+    font-family: handlee, helvetica;
 }
 
 section#writing form button.add{
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    font-family: lato, sans-serif;
     width: 25%;
     height: 50px;
     margin-left: 10px;
@@ -111,11 +131,13 @@ section#writing form.prose input{
     margin-top: 15px;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    font-family: handlee, helvetica;
 }
 
 section#writing form.prose button{
     height: 50px;
     width: 90%;
+    font-family: lato, sans-serif;
     margin-top: 25px;
     margin-left: 20px;
     grid-column: 2 / 3;

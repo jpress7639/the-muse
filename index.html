@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">  
     <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Lato:ital,wght@0,400;0,700;1,400&family=Shadows+Into+Light+Two&family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script defer src="./app.js"></script>
     <title>The Muse</title>
 </head>
@@ -20,10 +21,11 @@
         <button id="start-button">Click Here To See Your New Prompt</button>
         <div class="prompt"></div>
        
-        <div class="countdown"></div>
+        <div class="countdown"><p>2:00</p></div>
     </main>
     <section id="writing">
-        <ul class="keywords"></ul>
+        <ul class="keywords">
+        </ul>
         <form class="keywords" action="add-keywords">
         <input type="keywords">
         <button class="add">Add Keywords</button>
