@@ -104,4 +104,5 @@ This will track my estimation on how much time I will be spending on. I think th
 ## Change Log
   
 - (6/8) Constructed first readMe for the Project Proposal
-- (6/9) Project Approved and Began Basic HTML and CSS Structuring 
+- (6/9) Project Approved and Began Basic HTML and CSS Structuring, Set Up API Data Rendering 
+- (6/10) Worked on other JS functionality (Countdown Clock and List Making)

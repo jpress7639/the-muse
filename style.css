@@ -54,19 +54,23 @@ main#start div.prompt {
 }
 
 main#start div.countdown{
+    display: flex;
+    justify-content: center;
     height: 50px;
-    width: 50%;
-    text-align: center;
-    position: relative;
-}
-
-main#start div.countdown p{
     font-family: lato, serif;
     font-size: 30px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: -25px;
+    width: 50%;
+    text-align: center;
+}
+
+main#start div.countdown > div#minutes{
+    width: 10%;
+    height: 50px;
+}
+
+main#start div.countdown > div#seconds{
+    width: 10%;
+    height: 50px;
 }
 
 section#next-steps{
