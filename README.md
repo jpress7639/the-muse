@@ -75,8 +75,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |---|---| ---|
 |June 8| Project Prompt | Complete
 |June 9| Finishing Layout Structure, Wireframe, and Beginning HTML/CSS| Complete
-|June 10| Continuing Core Application Structure (HTML, CSS, etc.) and start beginning JS | Incomplete
-|June 11| Continue JS Work / Be Able to Render Data from API | Incomplete
+|June 10| Continuing Core Application Structure (HTML, CSS, etc.) and start beginning JS | Complete
+|June 11| Continue JS Work / Be Able to Render Data from API | Complete
 |June 12| MVP should be complete | Incomplete
 |June 13-14 | Polish App and implement Post-MVP if time allows | Incomplete
 |June 15| Present the Project | Incomplete
@@ -91,10 +91,10 @@ This will track my estimation on how much time I will be spending on. I think th
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Working with API / Rendering Data | H | 6 hrs |  |  |
+| Working with API / Rendering Data | H | 6 hrs | 3 hrs | 3 hrs |
 | Other JS Work (Click Functions, Words List, and Ending Prose) | H | 7 hrs | | |
 | CSS Design and Animation | M | 8 hrs | | |
-| HTML Structure | L | 2 hrs | | |
+| HTML Structure | L | 2 hrs | 30min | 45 min |
 | Phone Media Query | M | 2 hrs | | |
 | Post-MVP Work | L | 6 hrs | | |
 | Total | H | 31 hrs |  |  |
