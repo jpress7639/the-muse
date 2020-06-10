@@ -20,22 +20,23 @@
     <main id="start">
         <button id="start-button">Click Here To See Your New Prompt</button>
         <div class="prompt"></div>
-        <div class="countdown">
-            <div id="minutes"></div>
-            <div id="seconds"></div>
-        </div>
+        <div class="countdown"></div>
     </main>
     <section id="writing">
+        <h3>Look over your stream and see if any words or phrases stick out to you. Log them into the list on the left! Let them sit there for a bit and see if any prose pops out. Then, write it down on the text box on the right! </h3>
         <ul class="phrases">
         </ul>
-        <form class="keywords" action="add-keywords">
-        <input type="list">
+        <form class="keywords" action="submit">
+        <input type="text" id="list">
         <button class="add">Add Keywords</button>
         </form>
-        <form class="prose" action="final">
-        <input type="prose">
+        <form class="prose" action="submit">
+        <input type="text" id="final">
         <button id="submit">Save Your Prose!</button>
         </form>
     </section>
+    <footer>
+        <h2>By The Light of Common Day, Things Look Different...</h2>
+    </footer>
 </body>
 </html>

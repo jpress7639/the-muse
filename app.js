@@ -3,6 +3,8 @@ const promptButton = document.querySelector('#start-button')
 const promptDiv = document.querySelector('.prompt')
 const countDown = document.querySelector(".countdown")
 const startSection = document.querySelector("#start")
+const writingSection = document.querySelector("#writing")
+const finalInput = document.querySelector("#final")
 // promptButton.addEventListener('click', writingTime)
 
 // writingTime () {
@@ -12,7 +14,7 @@ const startSection = document.querySelector("#start")
 //API Data Randomizing for the Prompt
 
 const getPrompt = async () => {
-    countdown(5)
+    startTimer(10, countDown)
     promptButton.remove()
     try {
         const url = "https://pixabay.com/api/?key=16950900-4b8a7189e0448d4be8704e6ae"
@@ -34,79 +36,72 @@ const getPrompt = async () => {
 
 promptButton.addEventListener('click', getPrompt)
 // Countdown 
-// https://gist.github.com/adhithyan15/4350689
-function countdown(minutes) {
-    let seconds = 60;
-    let mins = minutes
-    function tick() {
-        let counter = document.getElementById("countdown");
-        let current_minutes = mins - 1
-        seconds--;
-        counter.innerHTML = current_minutes.toString() + ":" + (seconds < 10 ? "0" : "") + String(seconds);
-        countDown.append(counter)
-        if( seconds > 0 ) {
-            setTimeout(tick, 1000);
-        } else {
-            if(mins > 1) {
-                countdown(mins - 1);           
-            }
-        } if (seconds === 0, minutes === 0) {
-            console.log("Times UP")
-    }
-    }
-    tick();
+// https://stackoverflow.com/questions/20618355/the-simplest-possible-javascript-countdown-timer
+ 
+function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer === 0) {
+            countDown.remove();
+            promptDiv.remove();
+            startSection.remove();
+            writingSection.style.display = "grid"
+        }
+    }, 1000);
 }
 
+
 // Countdown Clock
-// found on https://gist.github.com/steveosoule/5053007
-// let writingTime = new Date().setTime(30000)
 
-// let currentTime = new Date().getTime()
-
-// let remainingTime = writingTime - currentTime
-
-// let mins = Math.floor((remainingTime/1000)/60)
-// let secs = Math.floor(remainingTime/1000)
-
-// function countdown() {
-//         setTimeout(Decrement(writingTime), 1000)
-// }
-
-// function Decrement() {
-//     if (document.getElementById) {
-//         if (writingTime < currentTime) {
-//             // countDown.remove()
-//             // startSection.remove()
-//             console.log("Times UP")
-//         }
-//        let minutes = document.getElementById("minutes")
-//        let seconds = document.getElementById("seconds")
-//         if (seconds < 59) {
-//             seconds.innerHTML = secs
-//         } else {
-//             minutes.innerHTML = getMinutes()
-//             seconds.innerHTML = getSeconds()
-//         }
-//         secs --;
-//         setTimeout(Decrement(), 1000)
-//     }   
-// }
-// function getMinutes() {
-//     mins = Math.floor(secs / 60)
-// }
-// function getSeconds() {
-//     console.log(secs-Math.round(mins * 60))
-// }
 
 //List Making 
 
-// const wordsList = document.querySelector(".phrases")
-// const addButton = document.querySelector(".add")
+const wordsList = document.querySelector(".phrases")
+const input = document.querySelector("#list")
+const addButton = document.querySelector(".add")
+const finalButton = document.querySelector("#submit")
 
-// addButton.addEventListener('click', addKeyWord)
+addButton.addEventListener('click', addKeyWord)
 
-// const addKeyWord = function(e) {
-//     e.preventDefault()
-//     let input = document.querySelector("#list")
-//     const value = input.value
-// }
+function addKeyWord(e) {
+    e.preventDefault()
+    let listItem = document.createElement("li")
+    listItem.classList = ""
+    let pTag = document.createElement("p")
+    pTag.innerText = input.value
+    listItem.append(pTag)
+    // listItem.addEventListener('click', deleteWord)
+    if (input.value !== "") {
+        wordsList.append(listItem)
+    }
+    input.value = ""
+}
+
+finalButton.addEventListener('click', saveProse)
+
+//COPYING PROSE TO CLIPBOARD FOR EXTERNAL USE 
+//from Mozilla Developer to interact with clipboard to copy
+function saveProse(e) {
+    e.preventDefault()
+    let prose = finalInput.value
+    if (prose !== "") {
+        navigator.clipboard.writeText(prose)
+        .then(() => {
+          alert('Text copied to clipboard');
+        })
+        .catch(err => {
+          // In case the clipboard API Provides an Error ro they can't copy for some reason
+          console.error('Could not copy text: ', err);
+        });
+    } else {
+        alert("It's always better to get the text out. Who knows? Maybe you'll find some treasure")
+    }
+}
