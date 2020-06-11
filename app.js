@@ -4,21 +4,89 @@ const quoteButton = document.querySelector('.quote')
 const promptDiv = document.querySelector('.prompt')
 const countDown = document.querySelector(".countdown")
 const startSection = document.querySelector("#start")
+const nextSection = document.querySelector('.next')
 const writingSection = document.querySelector("#writing")
 const finalInput = document.querySelector("#final")
-const body = document.querySelector('body')
-// promptButton.addEventListener('click', writingTime)
+const body = document.body
+const star = document.querySelector('.star')
+const starTwo = document.querySelector('.star-two')
 
-// writingTime () {
+const shootAcross = function() {
+    return(Math.random() * window.innerWidth)
+}
 
+const shootDown = function () {
+    return(Math.random() * window.innerWidth)
+}
+
+const shootingStar = function(star) {
+    star.style.top = shootDown() + "px"
+    star.style.left = shootAcross() + "px"
+}
+
+shootingStar(star)
+// setInterval(function () {
+//     shootingStar(star)}, 20000);
+
+const newStar = function() {
+    const newStar = document.createElement('div')
+    newStar.className = ('star')
+    body.append(newStar)  
+    setInterval(function () {
+        shootingStar(newStar)}, 10000); 
+}
+
+for (let i = 0; i < 50; i++) {
+    newStar()
+}
+
+const newStarTwo = function() {
+    const newStar = document.createElement('div')
+    newStar.className = ('star-two')
+    body.append(newStar)  
+    setInterval(function () {
+        shootingStar(newStar)}, 10000); 
+}
+
+for (let i = 0; i < 25; i++) {
+    newStarTwo()
+}
+
+const newStarThree = function() {
+    const newStar = document.createElement('div')
+    newStar.className = ('star-three')
+    body.append(newStar)  
+    setInterval(function () {
+        shootingStar(newStar)}, 30000); 
+}
+
+for (let i = 0; i < 20; i++) {
+    newStarThree()
+}
+ 
+//Night Sky 
+
+// body.addEventListener('scroll', night)
+
+// const night = function() {
+//     let scroll = Window.scrollTop
+//     if (window.scrollY > 5) {
+//         body.style.backgroundColor = "rgb(38, 25, 51)"
+//     } else if (window.scrollY > 10) {
+//         body.style.backgroundColor = "rgb(87, 47, 132)"
+//     } else {
+//         body.style.backgroundColor = "rgb(9, 34, 79)"
+//     }
 // }
 
 //API Data Randomizing for the Prompt
 
 const getPrompt = async () => {
-    startTimer(10, countDown)
+    promptDiv.style.display= "block"
+    startSection.style.height = "60%"
     imageButton.remove()
     quoteButton.remove()
+    nextSection.remove()
     let instructions = document.createElement("p")
     instructions.innerText = `Here is your prompt! Write whatever comes into your mind before the countdown ends. Let it flow!`
     instructions.style.fontSize = "40px"
@@ -42,6 +110,7 @@ const getPrompt = async () => {
         img.style.height = "400px"
         img.style.boxShadow = "10px 15px 25px 0"
         promptDiv.append(img)
+        startTimer(10, countDown)
     } catch (error) {
         console.log(`this is your error, ${error}`)
     }
@@ -50,9 +119,10 @@ const getPrompt = async () => {
 imageButton.addEventListener('click', getPrompt)
 
 const getQuote = async () => {
-    startTimer(10, countDown)
+    promptDiv.style.display= "block"
     imageButton.remove()
     quoteButton.remove()
+    nextSection.remove()
     let instructions = document.createElement("p")
     instructions.innerText = `Here is your prompt! Write whatever comes into your mind before the countdown ends. Let it flow!`
     instructions.style.fontSize = "40px"
@@ -78,6 +148,7 @@ const getQuote = async () => {
         post.style.marginTop = "100px"
         post.style.lineHeight = "50px"
         promptDiv.append(post)
+        startTimer(10, countDown)
     } catch (error) {
         console.log(`this is your error, ${error}`)
     }
