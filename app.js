@@ -10,13 +10,14 @@ const finalInput = document.querySelector("#final")
 const body = document.body
 const star = document.querySelector('.star')
 const starTwo = document.querySelector('.star-two')
+const starThree = document.querySelector('.star-three')
 
 const shootAcross = function() {
     return(Math.random() * window.innerWidth)
 }
 
 const shootDown = function () {
-    return(Math.random() * window.innerWidth)
+    return(Math.random() * window.innerHeight)
 }
 
 const shootingStar = function(star) {
@@ -24,7 +25,7 @@ const shootingStar = function(star) {
     star.style.left = shootAcross() + "px"
 }
 
-shootingStar(star)
+// shootingStar(star)
 // setInterval(function () {
 //     shootingStar(star)}, 20000);
 
@@ -33,7 +34,7 @@ const newStar = function() {
     newStar.className = ('star')
     body.append(newStar)  
     setInterval(function () {
-        shootingStar(newStar)}, 10000); 
+        shootingStar(newStar)}, 1000); 
 }
 
 for (let i = 0; i < 50; i++) {
@@ -45,7 +46,7 @@ const newStarTwo = function() {
     newStar.className = ('star-two')
     body.append(newStar)  
     setInterval(function () {
-        shootingStar(newStar)}, 10000); 
+        shootingStar(newStar)}, 1000); 
 }
 
 for (let i = 0; i < 25; i++) {
@@ -57,7 +58,7 @@ const newStarThree = function() {
     newStar.className = ('star-three')
     body.append(newStar)  
     setInterval(function () {
-        shootingStar(newStar)}, 30000); 
+        shootingStar(newStar)}, 1000); 
 }
 
 for (let i = 0; i < 20; i++) {

@@ -3,10 +3,10 @@
 } */
 
 body{
-    background-color: rgb(9, 34, 79);
+    /* background-color: rgb(9, 34, 79); */
+    background: radial-gradient(#1B2735 0%, #090A0F 100%);
     position: relative;
     transition: all 1s;
-
     /* dark purple - rgb(51, 4, 117) */
 }
 
@@ -40,7 +40,7 @@ div.star-three {
     z-index: -100;
 }
 
-.twinkle{
+.twinkle {
     width: 4px;
     height: 4px;
     border-radius: 50%;
@@ -125,7 +125,6 @@ main#start h2 {
 }
 
 main#start h2:hover {
-    transform: rotate(360deg);
     background: rgba(253,255,255, 0.8);
 }
 
@@ -191,6 +190,7 @@ section#writing {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 75px 450px 50px;
     grid-gap: 10px;
+    transition: all 2s;
 }
 
 section#writing h3{
