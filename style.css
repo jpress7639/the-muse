@@ -20,6 +20,10 @@ div.star {
     z-index: -100;
 }
 
+div.star:hover {
+    transform: scale(1.1)
+}
+
 div.star-two {
     border-radius: 50%;
     width: 3px;
@@ -29,6 +33,11 @@ div.star-two {
     position: absolute;
     z-index: -100;
 }
+
+div.star-two:hover{
+    transform: scale(1.1)
+}
+
 
 div.star-three {
     border-radius: 50%;
@@ -40,12 +49,20 @@ div.star-three {
     z-index: -100;
 }
 
-.twinkle {
-    width: 4px;
-    height: 4px;
+div.star-three:hover{
+    transform: scale(1.1)
+}
+
+div.moon {
+    background-color: transparent;
     border-radius: 50%;
-    background-color:  rgba(247, 245, 234, 0.9);
-    box-shadow: 10px 15px 25px 0 rgba(244, 234, 178, 0.8);
+    box-shadow: 25px 10px 0px 0px rgba(247, 240, 101, 0.8);
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    right: 100px;
+    top: 40px; 
+    z-index: -50;
 }
 
 header.welcome {
@@ -184,7 +201,7 @@ section#writing {
     margin-top: 200px;
     margin-bottom: 100px;
     width: 100%;
-    height: 600px;
+    height: 605px;
     text-align: center;
     display: none;
     grid-template-columns: 1fr 1fr;
@@ -215,6 +232,7 @@ section#writing ul.phrases {
     justify-content: space-around;
     flex-wrap: wrap;
     list-style-type: none;
+    margin: 0 auto;
 }
 
 section#writing form.keywords{
@@ -226,9 +244,10 @@ section#writing form.keywords{
 }
 
 section#writing form.keywords input{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
     width: 60%;
     height: 50px;
-    margin-bottom: 5px;
     font-family: handlee, helvetica;
 }
 
@@ -254,7 +273,7 @@ section#writing form.prose {
 
 section#writing form.prose input{
     width: 95%;
-    margin-top: 15px;
+    margin-top: 10px;
     padding-bottom: 65%;
     grid-column: 2 / 3;
     grid-row: 2 / 4;
@@ -268,7 +287,7 @@ section#writing form.prose button{
     height: 50px;
     width: 90%;
     font-family: lato, sans-serif;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-left: 20px;
     grid-column: 2 / 3;
     grid-row: 3 / 4;
@@ -287,4 +306,109 @@ footer {
 footer:hover {
     transform: scale(1.1);
     color: rgb(247, 240, 101);
+}
+
+@media (max-width: 768px) {
+
+    header.welcome {
+        margin-bottom: 75px;
+    }
+
+    section#directions p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    main#start {
+        margin-top: 75px;
+    }
+
+    main#start h2 {
+        font-size: 20px;
+    }
+
+    section#writing {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50px 300px 200px;
+        height: 510px;
+    }
+
+    section#writing h3 {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    section#writing ul.phrases {
+        height: 75%;
+    }
+
+    section#writing form button.add{
+        font-size: 10px;
+        margin-top: 10px;
+        width: 40%;
+    }
+
+    section#writing form.keywords input{
+        width: 50%;
+    }
+
+    section#writing form.prose input{
+        padding-bottom: 70%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header.welcome {
+        margin-bottom: 50px;
+    }
+
+    section#directions {
+        margin: 100px auto;
+    }
+
+    section#directions p {
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+    main#start {
+        margin-top: 50px;
+    }
+
+    main#start h2 {
+        font-size: 20px;
+    }
+
+    main#start button#start-button {
+        font-size: 15px;
+        height: 30px;
+    }
+    section#writing {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 60px 250px 200px;
+        height: 510px;
+    }
+
+    section#writing h3 {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    section#writing form button.add{
+        font-size: 10px;
+        width: 50%;
+    }
+
+    section#writing form.keywords input{
+        width: 100%;
+    }
+
+    section#writing form.prose input{
+        padding-bottom: 140%;
+    }
+
+    section#writing form.prose button{
+        margin-top: 5px;
+    }
 }

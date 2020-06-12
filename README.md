@@ -92,11 +92,11 @@ This will track my estimation on how much time I will be spending on. I think th
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Working with API / Rendering Data | H | 6 hrs | 3 hrs | 3 hrs |
-| Other JS Work (Click Functions, Words List, and Ending Prose) | H | 7 hrs | | |
-| CSS Design and Animation | M | 8 hrs | | |
+| Other JS Work (Click Functions, Words List, and Ending Prose) | H | 7 hrs | 4 hrs | 4.5 hrs|
+| CSS Design and Animation | M | 8 hrs | 3 hrs | 3 hrs|
 | HTML Structure | L | 2 hrs | 30min | 45 min |
-| Phone Media Query | M | 2 hrs | | |
-| Post-MVP Work | L | 6 hrs | | |
+| Phone Media Query | M | 2 hrs | 1 hr | 1 hr |
+| Post-MVP Work | L | 6 hrs | 3 hrs | 3 hrs |
 | Total | H | 31 hrs |  |  |
 
 ## Code Snippet
@@ -107,3 +107,4 @@ This will track my estimation on how much time I will be spending on. I think th
 - (6/9) Project Approved and Began Basic HTML and CSS Structuring, Set Up API Data Rendering 
 - (6/10) Worked on other JS functionality (Countdown Clock and List Making)
 - (6/11) Finished MVP, Began advanced CSS Design and implemented Post-MVP
+- (6/12) Completed Post MVP work and began touching up loose details

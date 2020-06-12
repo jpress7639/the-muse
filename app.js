@@ -11,6 +11,7 @@ const body = document.body
 const star = document.querySelector('.star')
 const starTwo = document.querySelector('.star-two')
 const starThree = document.querySelector('.star-three')
+const phoneScreen = window.matchMedia( "(max-width: 768px")
 
 const shootAcross = function() {
     return(Math.random() * window.innerWidth)
@@ -34,7 +35,7 @@ const newStar = function() {
     newStar.className = ('star')
     body.append(newStar)  
     setInterval(function () {
-        shootingStar(newStar)}, 1000); 
+        shootingStar(newStar)}, 3000); 
 }
 
 for (let i = 0; i < 50; i++) {
@@ -46,7 +47,7 @@ const newStarTwo = function() {
     newStar.className = ('star-two')
     body.append(newStar)  
     setInterval(function () {
-        shootingStar(newStar)}, 1000); 
+        shootingStar(newStar)}, 4000); 
 }
 
 for (let i = 0; i < 25; i++) {
@@ -58,7 +59,7 @@ const newStarThree = function() {
     newStar.className = ('star-three')
     body.append(newStar)  
     setInterval(function () {
-        shootingStar(newStar)}, 1000); 
+        shootingStar(newStar)}, 5000); 
 }
 
 for (let i = 0; i < 20; i++) {
@@ -90,12 +91,14 @@ const getPrompt = async () => {
     nextSection.remove()
     let instructions = document.createElement("p")
     instructions.innerText = `Here is your prompt! Write whatever comes into your mind before the countdown ends. Let it flow!`
-    instructions.style.fontSize = "40px"
+    instructions.style.fontSize = "2em"
     instructions.style.color = "rgb(48, 47, 47)"
     instructions.style.textAlign = "center"
-    instructions.style.padding = "10px"
+    instructions.style.padding = "20px"
     instructions.style.boxShadow = "10px 15px 25px 0 rgba(48, 47, 47, 0.5)"
     instructions.style.backgroundColor = "rgba(253, 255, 255, 0.5)"
+    instructions.style.borderRadius = "50px"
+    instructions.style.width = "80%"
     startSection.append(instructions)
     try {
         const url = "https://pixabay.com/api/?key=16950900-4b8a7189e0448d4be8704e6ae"
@@ -108,7 +111,8 @@ const getPrompt = async () => {
         let img = document.createElement('img')
         img.setAttribute('src', thePrompt)
         img.style.width = "100%"
-        img.style.height = "400px"
+        img.style.height = "100%"
+        img.style.margin = "10px"
         img.style.boxShadow = "10px 15px 25px 0"
         promptDiv.append(img)
         startTimer(10, countDown)
@@ -126,12 +130,14 @@ const getQuote = async () => {
     nextSection.remove()
     let instructions = document.createElement("p")
     instructions.innerText = `Here is your prompt! Write whatever comes into your mind before the countdown ends. Let it flow!`
-    instructions.style.fontSize = "40px"
+    instructions.style.fontSize = "2em"
     instructions.style.color = "rgb(48, 47, 47)"
     instructions.style.textAlign = "center"
     instructions.style.padding = "10px"
     instructions.style.boxShadow = "10px 15px 25px 0 rgba(48, 47, 47, 0.5)"
     instructions.style.backgroundColor = "rgba(253, 255, 255, 0.5)"
+    instructions.style.borderRadius = "50px"
+    instructions.style.width = "80%"
     startSection.append(instructions)
     try {
         const quoteURL = "https://quote-garden.herokuapp.com/api/v2/quotes?page=1&limit=10"
@@ -144,10 +150,10 @@ const getQuote = async () => {
         post.innerHTML = (`${theQuote} <br> <em>${author}</em>`)
         post.style.backgroundColor = "rgba(253,255,255, 0.8)"
         post.style.boxShadow = "10px 15px 25px 0"
-        post.style.fontSize = "35px"
+        post.style.fontSize = "1em"
         post.style.textAlign = "center"
         post.style.marginTop = "100px"
-        post.style.lineHeight = "50px"
+        post.style.lineHeight = "45px"
         promptDiv.append(post)
         startTimer(10, countDown)
     } catch (error) {
