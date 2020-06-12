@@ -272,6 +272,11 @@ section#writing form button.add{
     width: 25%;
     height: 50px;
     margin-left: 10px;
+    transition: all 2s;
+}
+
+section#writing form button.add:hover {
+    transform: scale(1.1);
 }
 
 section#writing form.prose {
@@ -301,6 +306,11 @@ section#writing form.prose button{
     margin-left: 20px;
     grid-column: 2 / 3;
     grid-row: 3 / 4;
+    transition: all 2s;
+}
+
+section#writing form.prose button:hover{
+    transform: scale(1.1);
 }
 
 footer {
