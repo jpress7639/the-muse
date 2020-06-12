@@ -66,6 +66,18 @@ for (let i = 0; i < 20; i++) {
     newStarThree()
 }
  
+
+const newPlanet = function() {
+    const newStar = document.createElement('div')
+    newStar.className = ('planet')
+    body.append(newStar)  
+    setInterval(function () {
+        shootingStar(newStar)}, 10000); 
+}
+
+for (let i = 0; i < 7; i++) {
+    newPlanet()
+}
 //Night Sky 
 
 // body.addEventListener('scroll', night)

@@ -15,7 +15,7 @@ div.star {
     width: 2px;
     height: 2px;
     background-color: rgba(244, 234, 178, 0.8);
-    box-shadow: 10px 15px 25px 0 rgba(244, 234, 178, 0.8);
+    box-shadow: 10px 15px 25px 0 rgba(244, 234, 178, 1);
     position: absolute;
     z-index: -100;
 }
@@ -29,7 +29,7 @@ div.star-two {
     width: 3px;
     height: 3px;
     background-color: rgba(244, 234, 178, 0.8);
-    box-shadow: 10px 15px 25px 0 rgba(244, 234, 178, 0.8);
+    box-shadow: 10px 15px 25px 0 rgba(244, 234, 178, 1);
     position: absolute;
     z-index: -100;
 }
@@ -44,7 +44,7 @@ div.star-three {
     width: 4px;
     height: 4px;
     background-color: rgba(244, 234, 178, 0.8);
-    box-shadow: 10px 15px 25px 0 rgba(244, 234, 178, 0.8);
+    box-shadow: 10px 15px 25px 0 rgba(244, 234, 178, 1);
     position: absolute;
     z-index: -100;
 }
@@ -53,16 +53,26 @@ div.star-three:hover{
     transform: scale(1.1)
 }
 
+div.planet {
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    background-color: rgba(250, 225, 86, 0.8);
+    box-shadow: 10px 15px 25px 0 rgb(248, 241, 202);
+    position: absolute;
+    z-index: -100;
+}
+
 div.moon {
     background-color: transparent;
     border-radius: 50%;
-    box-shadow: 25px 10px 0px 0px rgba(247, 240, 101, 0.8);
-    width: 100px;
-    height: 100px;
+    box-shadow: 25px 10px 2px 5px rgba(247, 240, 101, 0.8);
+    width: 120px;
+    height: 120px;
     position: fixed;
-    right: 100px;
-    top: 40px; 
-    z-index: -50;
+    right: 150px;
+    top: 30px; 
+    z-index: -150;
 }
 
 header.welcome {
@@ -294,13 +304,13 @@ section#writing form.prose button{
 }
 
 footer {
-    background: rgba(253,255,255, 0.3);
+    background: transparent;
     box-shadow: 10px 15px 25px 0  black;
     border-radius: 40px;
     font-family: shadows into light two;
     margin-top: 100px;
     text-align: center;
-    transition: all 3s;
+    transition: all 2s;
 }
 
 footer:hover {
