@@ -12,7 +12,7 @@ const star = document.querySelector('.star')
 const starTwo = document.querySelector('.star-two')
 const starThree = document.querySelector('.star-three')
 
-//Night Sky
+//Night Sky - using the stars in the background in three separate divs 
 
 const shootAcross = function() {
     return(Math.random() * window.innerWidth)
@@ -99,10 +99,9 @@ const getPrompt = async () => {
     try {
         const url = "https://pixabay.com/api/?key=16950900-4b8a7189e0448d4be8704e6ae"
         const response = await axios.get(url)
-        // console.log(response)
         const newPrompt = response.data.hits
         let thePrompt = newPrompt[Math.floor(Math.random() * newPrompt.length)].webformatURL
-        // console.log(thePrompt)
+
 
         let img = document.createElement('img')
         img.setAttribute('src', thePrompt)
@@ -118,6 +117,8 @@ const getPrompt = async () => {
 }
 
 imageButton.addEventListener('click', getPrompt)
+
+//The second API to use for prompts
 
 const getQuote = async () => {
     promptDiv.style.display= "block"

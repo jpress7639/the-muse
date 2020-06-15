@@ -101,6 +101,25 @@ This will track my estimation on how much time I will be spending on. I think th
 
 ## Code Snippet
 
+```JSON
+function saveProse(e) {
+    e.preventDefault()
+    let prose = finalInput.value
+    if (prose !== "") {
+        navigator.clipboard.writeText(prose)
+        .then(() => {
+          alert('Text copied to clipboard');
+        })
+        .catch(err => {
+          // In case the clipboard API Provides an Error or they can't copy for some reason
+          console.error('Could not copy text: ', err);
+        });
+    } else {
+        alert("It's always better to get the text out. Who knows? Maybe you'll find some treasure")
+    }
+}
+```
+
 ## Change Log
   
 - (6/8) Constructed first readMe for the Project Proposal
