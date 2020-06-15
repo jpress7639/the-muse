@@ -101,7 +101,7 @@ This will track my estimation on how much time I will be spending on. I think th
 
 ## Code Snippet
 
-```JSON
+```
 function saveProse(e) {
     e.preventDefault()
     let prose = finalInput.value
