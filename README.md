@@ -73,9 +73,9 @@ https://wireframe.cc/pDz2Pf
 |June 9| Finishing Layout Structure, Wireframe, and Beginning HTML/CSS| Complete
 |June 10| Continuing Core Application Structure (HTML, CSS, etc.) and start beginning JS | Complete
 |June 11| Continue JS Work / Be Able to Render Data from API | Complete
-|June 12| MVP should be complete | Incomplete
-|June 13-14 | Polish App and implement Post-MVP if time allows | Incomplete
-|June 15| Present the Project | Incomplete
+|June 12| MVP should be complete | Complete
+|June 13-14 | Polish App and implement Post-MVP if time allows | Complete
+|June 15| Present the Project | Complete
 
 ## Priority Matrix
 
