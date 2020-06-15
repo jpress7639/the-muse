@@ -91,13 +91,13 @@ This will track my estimation on how much time I will be spending on. I think th
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Working with API / Rendering Data | H | 6 hrs | 3 hrs | 3 hrs |
-| Other JS Work (Click Functions, Words List, and Ending Prose) | H | 7 hrs | 4 hrs | 4.5 hrs|
-| CSS Design and Animation | M | 8 hrs | 3 hrs | 3 hrs|
+| Working with API / Rendering Data | H | 6 hrs | 3 hrs | 4 hrs |
+| Other JS Work (Click Functions, Words List, and Ending Prose) | H | 7 hrs | 4 hrs | 5 hrs|
+| CSS Design and Animation | M | 8 hrs | 6 hrs | 6 hrs|
 | HTML Structure | L | 2 hrs | 30min | 45 min |
 | Phone Media Query | M | 2 hrs | 1 hr | 1 hr |
 | Post-MVP Work | L | 6 hrs | 3 hrs | 3 hrs |
-| Total | H | 31 hrs |  |  |
+| Total | H | 31 hrs | 19.5 hrs | 20 hrs |
 
 ## Code Snippet
 
