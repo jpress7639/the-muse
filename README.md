@@ -4,7 +4,7 @@
 
 ## What is The Muse?
 
-The Muse is a brainstorming app for all artists to find more inspiration to continue creating new work. This will be done in three phases. When started, the user first will be present with a prompt. This prompt will be of their choosing (it would be either a series of pictures and/or a quote provided depending on the user's choosing) After a 5 min session to write a stream of consciousness, the user will then log whichever words or phrases interest them into an unordered list for their own record. The user will then be challenged to try to start creating a new work (whether it's a song, painting, drawing, poem, prose, etc.).
+The Muse is a brainstorming app for all artists to find more inspiration to continue creating new work. This will be done in three phases. When started, the user first will be present with a prompt. This prompt will be of their choosing (it would be either a series of pictures and/or a quote provided depending on the user's choosing) After a a timed session to write a stream of consciousness, the user will then log whichever words or phrases interest them into an unordered list for their own record. The user will then be challenged to try to start creating a new work (whether it's a song, painting, drawing, poem, prose, etc.).
 
 ## API and Data Sample
 
