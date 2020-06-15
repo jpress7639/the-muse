@@ -108,3 +108,4 @@ This will track my estimation on how much time I will be spending on. I think th
 - (6/10) Worked on other JS functionality (Countdown Clock and List Making)
 - (6/11) Finished MVP, Began advanced CSS Design and implemented Post-MVP
 - (6/12) Completed Post MVP work and began touching up loose details
+- (6/13-6/14) Monitored Code for Any Glitches or Bugs in Use of App

@@ -11,7 +11,8 @@ const body = document.body
 const star = document.querySelector('.star')
 const starTwo = document.querySelector('.star-two')
 const starThree = document.querySelector('.star-three')
-const phoneScreen = window.matchMedia( "(max-width: 768px")
+
+//Night Sky
 
 const shootAcross = function() {
     return(Math.random() * window.innerWidth)
@@ -26,9 +27,6 @@ const shootingStar = function(star) {
     star.style.left = shootAcross() + "px"
 }
 
-// shootingStar(star)
-// setInterval(function () {
-//     shootingStar(star)}, 20000);
 
 const newStar = function() {
     const newStar = document.createElement('div')
@@ -78,20 +76,6 @@ const newPlanet = function() {
 for (let i = 0; i < 7; i++) {
     newPlanet()
 }
-//Night Sky 
-
-// body.addEventListener('scroll', night)
-
-// const night = function() {
-//     let scroll = Window.scrollTop
-//     if (window.scrollY > 5) {
-//         body.style.backgroundColor = "rgb(38, 25, 51)"
-//     } else if (window.scrollY > 10) {
-//         body.style.backgroundColor = "rgb(87, 47, 132)"
-//     } else {
-//         body.style.backgroundColor = "rgb(9, 34, 79)"
-//     }
-// }
 
 //API Data Randomizing for the Prompt
 
@@ -220,7 +204,6 @@ function addKeyWord(e) {
     pTag.style.boxShadow = ("10px 15px 25px 0 rgba(239, 206, 21, 0.7)")
     listItem.append(pTag)
     listItem.style.color = "#f2d665"
-    // listItem.addEventListener('click', deleteWord)
     if (input.value !== "") {
         wordsList.append(listItem)
     }
@@ -240,7 +223,7 @@ function saveProse(e) {
           alert('Text copied to clipboard');
         })
         .catch(err => {
-          // In case the clipboard API Provides an Error ro they can't copy for some reason
+          // In case the clipboard API Provides an Error or they can't copy for some reason
           console.error('Could not copy text: ', err);
         });
     } else {
