@@ -1,10 +1,8 @@
 # Project Overview
 
-## Project Name
+## The Muse
 
-The Muse
-
-## Project Description
+## What is The Muse?
 
 The Muse is a brainstorming app for all artists to find more inspiration to continue creating new work. This will be done in three phases. When started, the user first will be present with a prompt. This prompt will be of their choosing (it would be either a series of pictures and/or a quote provided depending on the user's choosing) After a 5 min session to write a stream of consciousness, the user will then log whichever words or phrases interest them into an unordered list for their own record. The user will then be challenged to try to start creating a new work (whether it's a song, painting, drawing, poem, prose, etc.).
 
@@ -67,10 +65,6 @@ https://wireframe.cc/pDz2Pf
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
-
 |  Day | Deliverable | Status
 |---|---| ---|
 |June 8| Project Prompt | Complete
@@ -128,3 +122,4 @@ function saveProse(e) {
 - (6/11) Finished MVP, Began advanced CSS Design and implemented Post-MVP
 - (6/12) Completed Post MVP work and began touching up loose details
 - (6/13-6/14) Monitored Code for Any Glitches or Bugs in Use of App
+- (6/15) Deployed Project and Ready for Presentation
