@@ -371,7 +371,7 @@ footer:hover {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 425px) {
 
     header.welcome {
         margin-bottom: 50px;
@@ -405,7 +405,7 @@ footer:hover {
     }
 
     section#writing h3 {
-        font-size: 12px;
+        font-size: 10px;
         padding: 5px;
     }
 

@@ -110,7 +110,8 @@ const getPrompt = async () => {
         img.style.margin = "10px"
         img.style.boxShadow = "10px 15px 25px 0"
         promptDiv.append(img)
-        startTimer(10, countDown)
+        //set time here!
+        startTimer(10, countDown)  
     } catch (error) {
         console.log(`this is your error, ${error}`)
     }
@@ -152,7 +153,8 @@ const getQuote = async () => {
         post.style.marginTop = "100px"
         post.style.lineHeight = "45px"
         promptDiv.append(post)
-        startTimer(10, countDown)
+        //set time here!
+        startTimer(30, countDown)
     } catch (error) {
         console.log(`this is your error, ${error}`)
     }
@@ -181,6 +183,7 @@ function startTimer(duration, display) {
             startSection.remove();
             writingSection.style.display = "grid"
         }
+        // Set Interval for the Amount of seconds the decrement is going by 
     }, 1000);
 }
 
